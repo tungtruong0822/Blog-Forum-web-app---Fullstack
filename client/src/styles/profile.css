@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.card-container h3 {
+  margin: 10px 0;
+}
+
+.card-container h6 {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.card-container p {
+  font-size: 14px;
+  line-height: 21px;
+  width: 90%;
+  margin: 15px auto;
+  word-wrap: break-word;
+}
+
+.card-container {
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  padding-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-container .round {
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+  border: 1px solid #03bfcb;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+button.primary {
+  background-color: #03bfcb;
+  border: 1px solid #03bfcb;
+  border-radius: 3px;
+  color: #231e39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+button.warning {
+  background-color: #ffcc00;
+  border: 1px solid #ffcc00;
+  border-radius: 3px;
+  color: #cc3300;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+}
+
+button.primary.ghost {
+  background-color: transparent;
+  color: #02899c;
+}
+
+.skills {
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills ul li {
+  border: 1px solid #2d2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+}
+
+/* edit Prifile */
+
+/* .editProfile {
+} */
+
+.editProfile img {
+  width: 150px;
+  height: 150px;
+  object-fit: fill;
+  padding: 5px;
+  border: 2px black solid;
+}
+
+/* post */
+.blog-user-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

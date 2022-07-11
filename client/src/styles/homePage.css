@@ -1,0 +1,37 @@
+.homePage {
+  width: 100%;
+  margin: 1rem 0px;
+}
+
+.homePage h3 a {
+  color: darkblue;
+  letter-spacing: 3;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.homePage .home_blogs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
+  margin-bottom: 15px;
+  gap: 10px;
+}
+.blog-card {
+  text-align: center;
+  justify-self: center;
+  cursor: pointer;
+}
+/* getcategory */
+
+.blog_get_category {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(286px, 1fr));
+  margin-bottom: 15px;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+.pagination .page-item {
+  cursor: pointer;
+}

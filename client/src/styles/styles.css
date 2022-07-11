@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* avatart */
+
+.avatar-smaill {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  transform: translateY(-3px);
+  border-radius: 50%;
+}
+
+@import url("./auth.css");
+@import url("./toast.css");
+@import url("./profile.css");
+@import url("./homePage.css");
+@import url("./comment.css");

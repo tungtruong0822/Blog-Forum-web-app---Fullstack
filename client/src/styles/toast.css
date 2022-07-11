@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|ZCOOL+KuaiLe&display=swap");
+
+.main-loading {
+  position: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(195, 207, 226, 0.3);
+  z-index: 9;
+}
+
+.loading {
+  min-height: 80%;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  height: 50px;
+  width: 50px;
+  transform-origin: bottom center;
+  animation: rotate 2s linear infinite;
+  margin: auto;
+}
+
+.circle {
+  display: inline-block;
+  background-color: purple;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: grow 1.5s linear infinite;
+  margin: -10px;
+}
+
+.circle:nth-child(2) {
+  background-color: palevioletred;
+  animation-delay: 0.75s;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(1);
+  }
+}
+
+/* toast */
+
+.toast-show {
+  animation: slideInLeft linear 0.3s;
+}
+.hide-toast {
+  animation: fadeOut linear 0.3s;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(calc(100% + 32px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+/* alert */
+.errMsg {
+  background: rgb(214, 10, 10);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  letter-spacing: 1.3px;
+}
+
+.successMsg {
+  background: rgb(9, 158, 54);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  letter-spacing: 1.3px;
+}
